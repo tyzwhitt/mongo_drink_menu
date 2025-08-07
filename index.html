@@ -76,11 +76,13 @@
         .beer-list {
             list-style-type: none;
             columns: 2;
+            column-fill: balance;
             margin-bottom: 20px;
         }
 
         .beer-list li {
             margin-bottom: 5px;
+            break-inside: avoid; /* Prevents items from breaking across columns */
         }
 
         /* Dessert list: as a stacked list */
